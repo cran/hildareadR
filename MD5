@@ -1,11 +1,11 @@
-15ff4d68b050c3070ab8075f275165a3 *DESCRIPTION
+dae50797f940218cf3b9b5143fe06385 *DESCRIPTION
 acf5ad5e60916e787cd0d720752c4e49 *NAMESPACE
 8a5b3bafe9d725f81721d872681ef0b5 *R/hildareadR.R
-bd1cd207d10a49fd1b7d858a2e52c103 *R/read_hilda.R
+11da80e26f3dab51a756f258b2e5eb12 *R/read_hilda.R
 e9ee596f79276f1320db1ccaf7edf10d *inst/extdata/Combined_a170c.dta
 6620a216e6122c2e428e329df9dfe4b6 *inst/extdata/Combined_b170c.dta
 f516630ed6642ea113c4697bb260185d *inst/extdata/Combined_c170c.dta
 e9ee596f79276f1320db1ccaf7edf10d *inst/extdata/custom1.dta
 6620a216e6122c2e428e329df9dfe4b6 *inst/extdata/custom2.dta
-12739559112ad983cb5d7c16a1413ada *man/hildareadR.Rd
-b022b648b219f5b3674d8dd741045c6c *man/read_hilda.Rd
+8fca5586581f48f8de900ba596f77b66 *man/hildareadR.Rd
+b6e5e271dd5d2afa9fa1f46018235af8 *man/read_hilda.Rd

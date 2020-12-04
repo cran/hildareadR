@@ -4,7 +4,7 @@
 \alias{read_hilda}
 \title{Read and Combine HILDA waves}
 \usage{
-read_hilda(domain, waves = NULL, dir = NULL, filenames = NULL)
+read_hilda(domain, waves = NULL, dir = NULL, filenames = NULL, release = 18)
 }
 \arguments{
 \item{domain}{The domain you want to extract. \code{Domain} refers to the variable prefixes (of any length), excluding any wave indicators. For several domains separate by c("x", "y").}
@@ -14,6 +14,8 @@ read_hilda(domain, waves = NULL, dir = NULL, filenames = NULL)
 \item{dir}{Directory where the STATA files are located. Default is the current working directory.}
 
 \item{filenames}{Vector of .dta files to be read. Default is names used by the Australian Data Archive.}
+
+\item{release}{Release number of the wave to be read. Defaults to 18. (newest wave)}
 }
 \value{
 A \code{data.frame} with the chosen \code{domain} variables, xwaveid and wave indicator.
@@ -31,10 +33,10 @@ The function reads from the HILDA .dta (STATA) files.
 }
 \examples{
 path <- system.file("extdata", package = "hildareadR")
-# Reads variable hibiff and all variables named hgage from waves 1 to 3 in directory fdir
-read_hilda(c("hibiff", "hgage"), waves = 1:3, dir = path)
-# Reads variable aiopeye from custom files in directory fdir
-read_hilda("aiopeye", dir = path, filenames = c("custom1.dta", "custom2.dta"))
+# Reads variable hibiff and hgage from waves 1 to 3 in directory fdir and from release 17
+read_hilda(c("hibiff", "hgage"), waves = 1:3, dir = path, release = 17)
+# Reads variable aiopeye from custom files in directory fdir and from release 17
+read_hilda("aiopeye", dir = path, filenames = c("custom1.dta", "custom2.dta"), release = 17)
 }
 \author{
 Sara Kalucza & Sebastian Kalucza
